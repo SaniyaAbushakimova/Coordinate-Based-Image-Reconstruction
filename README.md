@@ -57,7 +57,7 @@ Optimizer: mini-batch SGD, Loss: MSE
 Optimizer: Adam, Loss: MSE
 <img width="1162" alt="Pasted Graphic 7" src="https://github.com/user-attachments/assets/7aac9dd2-d42d-4650-b115-8c498542b624" />
 
-**2. Image inpainting**
+**3. Image inpainting**
 
 <img width="1368" alt="image" src="https://github.com/user-attachments/assets/b7e907a1-5534-4490-b3f0-79b1e8371198" />
 
