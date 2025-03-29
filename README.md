@@ -36,15 +36,20 @@ This project blends **deep learning**, **signal processing**, and **function app
 
 ## Results Summary
 
-1. **Low-resolution image**
+**1. Low-resolution image**
 
 Optimizer: mini-batch SGD, Loss: MSE
 <img width="1164" alt="Pasted Graphic 4" src="https://github.com/user-attachments/assets/2bf417ea-0511-409a-8df4-bd2c57c2c6e8" />
 
+Optimizer: mini-batch SGD, Losses: MAE, MSE, Huber
+<img width="1162" alt="Pasted Graphic 8" src="https://github.com/user-attachments/assets/30548823-890d-4427-aa41-3c9cce6150e5" />
+
 Optimizer: Adam, Loss: MSE
 <img width="1162" alt="Pasted Graphic 6" src="https://github.com/user-attachments/assets/33c11e21-40e8-405b-b7eb-902c2f2b868f" />
 
-2. **High-resolution image**
+
+
+**2. High-resolution image**
 
 Optimizer: mini-batch SGD, Loss: MSE
 <img width="1164" alt="Pasted Graphic 5" src="https://github.com/user-attachments/assets/bacf6563-2b4e-433e-9908-bd702f27bb49" />
@@ -52,6 +57,9 @@ Optimizer: mini-batch SGD, Loss: MSE
 Optimizer: Adam, Loss: MSE
 <img width="1162" alt="Pasted Graphic 7" src="https://github.com/user-attachments/assets/7aac9dd2-d42d-4650-b115-8c498542b624" />
 
+**2. Image inpainting**
+
+<img width="1368" alt="image" src="https://github.com/user-attachments/assets/b7e907a1-5534-4490-b3f0-79b1e8371198" />
 
 
 ## Repository Contents
