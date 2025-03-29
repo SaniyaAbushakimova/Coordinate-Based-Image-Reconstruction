@@ -13,7 +13,8 @@ Tancik et al. (NeurIPS 2020) introduced Fourier feature mappings to address spec
 
 ## What This Project Includes
 
-* A fully connected multi-layer neural network implemented from scratch using NumPy
+* A fully connected multi-layer neural network implemented from scratch using NumPy.
+
 * Multiple input encoding strategies to transform the input (x, y):
   * No mapping: $\gamma(\mathbf{v})= \mathbf{v}$.
 
@@ -21,6 +22,19 @@ Tancik et al. (NeurIPS 2020) introduced Fourier feature mappings to address spec
 
   * Gaussian Fourier feature mapping: $\gamma(\mathbf{v})= \left[ \cos(2 \pi \mathbf B \mathbf{v}), \sin(2 \pi \mathbf B \mathbf{v}) \right]^\mathrm{T}$,
 where each entry in $\mathbf B \in \mathbb R^{m \times d}$ is sampled from $\mathrm{N}(0, \sigma^2)$.
+
+* A complete training and evaluation pipeline for:
+ * Low-resolution image reconstruction
+ * High-resolution image memorization with sharp detail recovery
+
+* Extensive experimentation with:
+ * Network depth and hidden size
+ * Learning rates and optimizers (SGD, Adam)
+ * Loss functions (MSE, MAE, Huber)
+ * Fourier feature size (m) and scale (σ)
+ * Image inpainting and reconstruction using masked data
+
+This project blends **deep learning**, **signal processing**, and **function approximation theory**, while reinforcing core concepts like backpropagation, gradient checking, and model optimization — all without relying on high-level ML libraries like PyTorch or TensorFlow.
 
 ## Results Summary
 
