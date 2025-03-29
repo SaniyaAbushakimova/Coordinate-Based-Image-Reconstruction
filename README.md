@@ -41,7 +41,7 @@ This project blends **deep learning**, **signal processing**, and **function app
 *Optimizer: mini-batch SGD, Loss: MSE*
 <img width="1164" alt="Pasted Graphic 4" src="https://github.com/user-attachments/assets/2bf417ea-0511-409a-8df4-bd2c57c2c6e8" />
 
-*Optimizer: mini-batch SGD, Losses: MAE, MSE, Huber*
+*Optimizer: mini-batch SGD, Losses: MAE, MSE, Huber, Mapping: Gaussian Fourier*
 <img width="1162" alt="Pasted Graphic 8" src="https://github.com/user-attachments/assets/30548823-890d-4427-aa41-3c9cce6150e5" />
 
 *Optimizer: Adam, Loss: MSE*
