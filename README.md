@@ -16,18 +16,18 @@ Tancik et al. (NeurIPS 2020) introduced Fourier feature mappings to address spec
 * A fully connected multi-layer neural network implemented from scratch using NumPy.
 
 * Multiple input encoding strategies to transform the input (x, y):
-  * No mapping: $\gamma(\mathbf{v})= \mathbf{v}$.
-  * Basic mapping: $\gamma(\mathbf{v})=\left[ \cos(2 \pi \mathbf{v}),\sin(2 \pi \mathbf{v}) \right]^\mathrm{T}$.
-  * Gaussian Fourier feature mapping: $\gamma(\mathbf{v})= \left[ \cos(2 \pi \mathbf B \mathbf{v}), \sin(2 \pi \mathbf B \mathbf{v}) \right]^\mathrm{T}$,
+  * **No mapping**: $\gamma(\mathbf{v})= \mathbf{v}$.
+  * **Basic mapping**: $\gamma(\mathbf{v})=\left[ \cos(2 \pi \mathbf{v}),\sin(2 \pi \mathbf{v}) \right]^\mathrm{T}$.
+  * **Gaussian Fourier feature mapping**: $\gamma(\mathbf{v})= \left[ \cos(2 \pi \mathbf B \mathbf{v}), \sin(2 \pi \mathbf B \mathbf{v}) \right]^\mathrm{T}$,
 where each entry in $\mathbf B \in \mathbb R^{m \times d}$ is sampled from $\mathrm{N}(0, \sigma^2)$.
 
 * A complete training and evaluation pipeline for:
-  * Low-resolution image reconstruction
-  * High-resolution image memorization with sharp detail recovery
+  * **Low-resolution** image reconstruction
+  * **High-resolution** image memorization with sharp detail recovery
 
 * Extensive experimentation with:
   * Network depth and hidden size
-  * Learning rates and optimizers (SGD, Adam)
+  * Learning rates and optimizers (mini-batch SGD, Adam)
   * Loss functions (MSE, MAE, Huber)
   * Fourier feature size (m) and scale (σ)
   * Image inpainting and reconstruction using masked data
@@ -35,6 +35,23 @@ where each entry in $\mathbf B \in \mathbb R^{m \times d}$ is sampled from $\mat
 This project blends **deep learning**, **signal processing**, and **function approximation theory**, while reinforcing core concepts like backpropagation, gradient checking, and model optimization — all without relying on high-level ML libraries like PyTorch or TensorFlow.
 
 ## Results Summary
+
+1. **Low-resolution image**
+
+Optimizer: mini-batch SGD, Loss: MSE
+<img width="1164" alt="Pasted Graphic 4" src="https://github.com/user-attachments/assets/2bf417ea-0511-409a-8df4-bd2c57c2c6e8" />
+
+Optimizer: Adam, Loss: MSE
+<img width="1162" alt="Pasted Graphic 6" src="https://github.com/user-attachments/assets/33c11e21-40e8-405b-b7eb-902c2f2b868f" />
+
+2. **High-resolution image**
+
+Optimizer: mini-batch SGD, Loss: MSE
+<img width="1164" alt="Pasted Graphic 5" src="https://github.com/user-attachments/assets/bacf6563-2b4e-433e-9908-bd702f27bb49" />
+
+Optimizer: Adam, Loss: MSE
+<img width="1162" alt="Pasted Graphic 7" src="https://github.com/user-attachments/assets/7aac9dd2-d42d-4650-b115-8c498542b624" />
+
 
 
 ## Repository Contents
