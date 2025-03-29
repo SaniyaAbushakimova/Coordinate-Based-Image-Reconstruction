@@ -4,6 +4,23 @@ Project completed on March 13, 2025.
 
 ## Project Overview
 
+This project explores how **coordinate-based neural networks** can be used to reconstruct images from scratch—using only the **(x, y) pixel coordinates** as inputs and learning to predict the corresponding **(R, G, B)** color values. Instead of treating an image as a grid of pixel values, the model learns a **continuous function** that maps spatial coordinates to color. The goal is to investigate how well a neural network can **memorize and reproduce an image** when trained only on location-based inputs.
+
+Inspired by the paper: “Fourier Features Let Networks Learn High Frequency Functions in Low Dimensional Domains”
+Tancik et al., *NeurIPS 2020* (paper link)[https://arxiv.org/pdf/2006.10739] 
+
+Tancik et al. (NeurIPS 2020) introduced Fourier feature mappings to address spectral bias in neural networks, this project implements and experiments with various input encoding strategies to evaluate their effect on image reconstruction quality.
+
+## What This Project Includes
+
+* A fully connected multi-layer neural network implemented from scratch using NumPy
+* Multiple input encoding strategies to transform the input (x, y):
+  * No mapping: $\gamma(\mathbf{v})= \mathbf{v}$.
+
+  * Basic mapping: $\gamma(\mathbf{v})=\left[ \cos(2 \pi \mathbf{v}),\sin(2 \pi \mathbf{v}) \right]^\mathrm{T}$.
+
+  * Gaussian Fourier feature mapping: $\gamma(\mathbf{v})= \left[ \cos(2 \pi \mathbf B \mathbf{v}), \sin(2 \pi \mathbf B \mathbf{v}) \right]^\mathrm{T}$,
+where each entry in $\mathbf B \in \mathbb R^{m \times d}$ is sampled from $\mathrm{N}(0, \sigma^2)$.
 
 ## Results Summary
 
