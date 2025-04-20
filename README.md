@@ -22,8 +22,8 @@ Tancik et al. (NeurIPS 2020) introduced Fourier feature mappings to address spec
 where each entry in $\mathbf B \in \mathbb R^{m \times d}$ is sampled from $\mathrm{N}(0, \sigma^2)$.
 
 * A complete training and evaluation pipeline for:
-  * **Low-resolution** image reconstruction.
-  * **High-resolution** image memorization with sharp detail recovery.
+  * **Low-resolution** (32x32) image reconstruction.
+  * **High-resolution** (128x128) image memorization with sharp detail recovery.
 
 * Extensive experimentation with:
   * Network depth and hidden size.
